@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tutoriais/Makefile.md",
-                "mode": "source",
+                "file": "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Makefile"
+              "title": "buscaOrdenada()"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tutoriais/Makefile.md",
+                "file": "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Makefile"
+              "title": "Backlinks for buscaOrdenada()"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tutoriais/Makefile.md",
+                "file": "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Makefile"
+              "title": "Outgoing links from buscaOrdenada()"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tutoriais/Makefile.md",
+                "file": "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Makefile"
+              "title": "Outline of buscaOrdenada()"
             }
           }
         ]
@@ -170,11 +170,11 @@
   },
   "active": "54ffb780868e16c5",
   "lastOpenFiles": [
-    "Tutoriais/Github.md",
+    "GameProjectBCC/Informações.md",
     "Tutoriais/Makefile.md",
     "Projeto.md",
+    "Tutoriais/Github.md",
     "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
-    "GameProjectBCC/Informações.md",
     "GameProjectBCC/Documentação/TerminalEngine.h",
     "GameProjectBCC/Documentação",
     "GameProjectBCC/Lore",
