@@ -58,3 +58,14 @@ int fselect(int numOptions, ...){
 
   return 0;
 }
+
+int buscaOrdenada(int vetor[], int tamanho, int alvo) {
+    for (int i = 0; i < tamanho; i++) {
+        if (vetor[i] == alvo) {
+            return i; // Retorna o índice do elemento encontrado
+        } else if (vetor[i] > alvo) {
+            break; // Como o vetor está ordenado, não faz sentido continuar
+        }
+    }
+    return -1; // Elemento não encontrado
+}

@@ -1,4 +1,4 @@
 - [ ] Criar Discord
 - [x] Escrever sobre git, preparar o git
 - [ ] escrever sobre makefile, preparar o makefile
-- [ ] Preparar o Obsidian e upa-lo no github
+- [x] Preparar o Obsidian e upa-lo no github

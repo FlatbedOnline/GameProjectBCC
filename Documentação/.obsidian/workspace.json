@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GameProjectBCC/Projeto.md",
+                "file": "GameProjectBCC/Informações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projeto"
+              "title": "Informações"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GameProjectBCC/Projeto.md",
+                "file": "GameProjectBCC/Informações.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Projeto"
+              "title": "Backlinks for Informações"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GameProjectBCC/Projeto.md",
+                "file": "GameProjectBCC/Informações.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Projeto"
+              "title": "Outgoing links from Informações"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GameProjectBCC/Projeto.md",
+                "file": "GameProjectBCC/Informações.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Projeto"
+              "title": "Outline of Informações"
             }
           }
         ]
@@ -168,10 +168,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54ffb780868e16c5",
+  "active": "21f15af0dd250e10",
   "lastOpenFiles": [
-    "GameProjectBCC/Github.md",
-    "GameProjectBCC/Projeto.md",
+    "GameProjectBCC/Documentação",
+    "GameProjectBCC/Lore",
+    "Projeto.md",
+    "GameProjectBCC/Informações.md",
+    "Tutoriais/Github.md",
+    "Tutoriais",
     "GameProjectBCC",
     "Welcome.md"
   ]
