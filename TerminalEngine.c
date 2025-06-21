@@ -5,22 +5,32 @@
 #include <termios.h>
 #include "TerminalEngine.h"
 
-void raw(){
-  struct termios t;
-  tcgetattr(STDIN_FILENO, &t);
-  t.c_lflag &= ~(ICANON | ECHO);
-  tcsetattr(STDIN_FILENO, TCSANOW, &t);
+char getch() {
+    struct termios oldt, newt;
+    char ch;
+    
+    tcgetattr(STDIN_FILENO, &oldt);
+    newt = oldt;
+    newt.c_lflag &= ~(ICANON | ECHO); 
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+
+    ch = getchar();
+
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    return ch;
 }
 
-void normal(){
-  struct termios t;
-  tcgetattr(STDIN_FILENO, &t);
-  t.c_lflag |= (ICANON | ECHO);
-  tcsetattr(STDIN_FILENO, TCSANOW, &t);
+void showMenu(int select, int options, char ** vet) {
+  printf("\r");  
+  for (int i = 0; i < options; i++) {
+        if (i == select)
+            printf(" [%s] ", vet[i]);
+    else
+            printf("  %s  ", vet[i]);
+    }
 }
 
-int fselect(int numOptions, ...){
-  int value;
+int menu(int numOptions, ...){
   va_list list;
   char **selectOptions = malloc(numOptions * sizeof(char*));
   if(!selectOptions){
@@ -28,38 +38,48 @@ int fselect(int numOptions, ...){
   }
 
   va_start(list, numOptions);
-
   for(int i = 0; i < numOptions; i++){
     selectOptions[i] = va_arg(list, char *); 
-
-    printf("%s\n", selectOptions[i]);
   }
-  char keyboard;
-  
-  raw();
 
-  while(1){
-    keyboard = getchar();
+  for(int i = 0; i < numOptions; i++){
+    printf("\r"); // \r volta o cursor pro começo da linha, tentem usar isso, é bem útil.
+    if (numOptions == 0)
+        printf("[%s] ", selectOptions[i]);
+    else
+        printf("%s ", selectOptions[i]);
+    fflush(stdout);
+  }
 
-    switch (keyboard) {
-      case 72 :
-        printf("%s", selectOptions[0]);
-        break;
-      case 80 : printf("%s", selectOptions[1]);
-        break;
-      case 'a' : printf("teste"); break;
-      default: value = 10;
+    int selected = 0; 
+    char ch;
+
+    showMenu(selected, numOptions, selectOptions);
+
+    while ((ch = getch()) != '\n' && ch != 32) {
+        if (ch == 27) { // ESC
+            if (getch() == '[') {
+                char dir = getch();
+                if (dir == 'C') {// → direita
+                     selected = (selected + 1) % numOptions;                
+              } else if (dir == 'D') { // ← esquerda
+                    selected = (selected - 1 + numOptions) % numOptions;
+                }
+                showMenu(selected, numOptions, selectOptions);
+            }
+        }
+        
+    
     }
-  }
 
-  normal();
+  
   free(selectOptions);
   va_end(list);
 
-  return 0;
+  return selected + 1;
 }
 
-int buscaOrdenada(int vetor[], int tamanho, int alvo) {
+int buscaLinear(int vetor[], int tamanho, int alvo) {
     for (int i = 0; i < tamanho; i++) {
         if (vetor[i] == alvo) {
             return i; // Retorna o índice do elemento encontrado
