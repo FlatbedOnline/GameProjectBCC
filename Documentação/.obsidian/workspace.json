@@ -170,9 +170,10 @@
   },
   "active": "54ffb780868e16c5",
   "lastOpenFiles": [
-    "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
-    "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
     "GameProjectBCC/Informações.md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
     "Tutoriais/Github.md",
     "Tutoriais/Makefile.md",
     "Projeto.md",

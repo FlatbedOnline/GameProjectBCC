@@ -2,7 +2,7 @@
 EXEC = programa
 
 # Lista de arquivos fonte
-SRC = main.c TerminalEngine.c
+SRC = main.c TerminalEngine.c miniaudio.c
 
 # Compilador
 CC = gcc
@@ -10,12 +10,15 @@ CC = gcc
 # Flags de compilação
 CFLAGS = -Wall -g
 
+# Outras regras
+RULES = -lpthread -lm
+
 # Regra padrão
 all: $(EXEC)
 
 # Como compilar o executável
 $(EXEC): $(SRC)
-	$(CC) $(CFLAGS) -o $(EXEC) $(SRC)
+	$(CC) $(CFLAGS) -o $(EXEC) $(SRC) $(RULES)
 
 # Limpa arquivos compilados
 clean:
