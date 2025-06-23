@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Tutoriais/Github.md",
+=======
+                "file": "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
+>>>>>>> b3d7f6b57d0a3e8091a19c8f6dc29fd8d0950143
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "Github"
+=======
+              "title": "play_som()"
+>>>>>>> b3d7f6b57d0a3e8091a19c8f6dc29fd8d0950143
             }
           }
         ]
@@ -170,10 +178,24 @@
   },
   "active": "54ffb780868e16c5",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "GameProjectBCC/Informações.md",
     "Tutoriais/Github.md",
     "Tutoriais/Makefile.md",
     "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
+=======
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som_simples().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/init_audio().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/shutdown_audio().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions",
+    "GameProjectBCC/Informações.md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
+    "Tutoriais/Github.md",
+    "Tutoriais/Makefile.md",
+>>>>>>> b3d7f6b57d0a3e8091a19c8f6dc29fd8d0950143
     "Projeto.md",
     "GameProjectBCC/Documentação/TerminalEngine.h",
     "GameProjectBCC/Documentação",
