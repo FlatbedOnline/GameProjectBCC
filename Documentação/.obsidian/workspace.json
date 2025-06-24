@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
+                "file": "GameProjectBCC/Informações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "play_som()"
+              "title": "Informações"
             }
           }
         ]
@@ -170,10 +170,10 @@
   },
   "active": "54ffb780868e16c5",
   "lastOpenFiles": [
-    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som_simples().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/init_audio().md",
-    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/shutdown_audio().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som_simples().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/shutdown_audio().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions",

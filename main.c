@@ -9,23 +9,7 @@
 
 
 int main(){
-  init_audio(); //Deve ser evocado SEMPRE no começo do main.
 
-  system("cat menu.txt");
-
-  play_som("music.mp3");//função que realmente toca a música.
-
-  printf("\n                     GAME: MENU DE TESTE\n");
-
-   //Exemplo prático de uso da função menu.
-  if(menu("                      ",1, 2,"Jogar","Sair") == 1){
-    printf("\nO jogo não ta pronto ainda... \n");
-    return 0;
-  }else{
-    printf("\nSaindo..\n");
-  }
-  
-  shutdown_audio(); //Deve ser evocado SEMPRE antes do return.
   return 0;
 }
 
