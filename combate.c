@@ -42,6 +42,5 @@ int combate(){
             telaInventario(inv);
         }
     }
-     
     return 1;
 }
