@@ -6,11 +6,7 @@
 
 int telaAtaques(int escolha){
     int opc;
-    if(escolha == 1){
-        opc = menu("                      ", 1, 4, habilidades->nome[0], habilidades->nome[1], habilidades->nome[2], habilidades->nome[3]);
-    }else{
-        opc = menu("                      ", 1, 4, habilidades->nome[0+(4*escolha)], habilidades->nome[1+(4*escolha)], habilidades->nome[2+(4*escolha)], habilidades->nome[3+(4*escolha)]);
-    }
+    opc = menu("                      ", 1, 4, habilidades->nome[0+(4*(escolha-1))], habilidades->nome[1+(4*(escolha-1))], habilidades->nome[2+(4*(escolha-1))], habilidades->nome[3+(4*(escolha-1))]);
     return opc;
 }
 
