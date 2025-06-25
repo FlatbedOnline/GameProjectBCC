@@ -27,22 +27,27 @@ static ClasseInfo classes[] = {
 // nos vetores de habilidades, o primeiro numero é a classe, basicamente é o id da classe
 
 static Habilidade habilidades[] = {
+    {1, "Golpe Espada", "10 de dano", 10, 0},
     {1, "Golpe Escudo", "15 de dano + atordoamento.", 15, 2},
     {1, "Investida", "35 de dano.", 35, 4},
     {1, "Postura Defensiva", "Reduz o dano por 2 turnos.", 0, 3},
 
+    {2, "Ataque magico", "10 de dano", 10, 0},
     {2, "Bola de Fogo", "30 de dano.", 30, 4},
     {2, "Raio Gélido", "20 de dano + reduz velocidade.", 20, 3},
     {2, "Cura Arcana", "Recupera 30 HP.", 0, 5},
 
+    {3, "Ataque Machado", "10 de dano", 10, 0},
     {3, "Esmagada Brutal", "50 de dano (50%% de chance de errar).", 50, 3},
     {3, "Grito Selvagem", "Aumenta ataque em 10 por 2 turnos.", 0, 2},
     {3, "Fúria", "40 de dano e se machuca em 10.", 40, 3},
 
+    {4, "Flechada", "10 de dano", 10, 0},
     {4, "Tiro Certeiro", "25 de dano (30%% chance de crítico).", 25, 3},
     {4, "Rajada de Flechas", "3x10 de dano em um turno.", 30, 5}, 
     {4, "Flecha Envenenada", "15 de dano + envenena por 3 turnos.", 15, 4}, //dano do veneno nao fiz mas bote 2 ou 3 por turno
 
+    {5, "Facada", "10 de dano", 10, 0},
     {5, "Golpe Sombrio", "20 de dano + chance de esquiva aumentada.", 20, 3},
     {5, "Roubo de Vida", "15 de dano e recupera metade como HP.", 15, 4},
     {5, "Passo Sombrio", "Avança e ataca duas vezes com 15 de dano cada", 30, 5}, //se tiver animação de ataque colocar 2 lapadas neste ataque

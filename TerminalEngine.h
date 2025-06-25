@@ -12,5 +12,6 @@ char getch();
 void showMenu(char * extra,int select, int options, char ** vet); 
 int menu(char * extra,int sound, int numOption, ...);
 int buscaLinear(int vetor[], int tamanho, int alvo);
+int classe(int escolha, int *PP, int *ATK, int *HP, char *nome_classe);
 #endif // !TERMINALENGINE_H 
 #define TERMINALENGINE_H

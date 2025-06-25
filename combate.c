@@ -22,7 +22,7 @@ Ataque ataques[4] = {
 
 
 int telaAtaques(int escolha){
-    int opc = menu("                      ", 1, 4, habilidades->nome[0+escolha], habilidades->nome[1+escolha], habilidades->nome[2], ataques->nome[3]);
+    int opc = menu("                      ", 1, 4, habilidades->nome[0+(4*escolha)], habilidades->nome[1+(4*escolha)], habilidades->nome[2+(4*escolha)], habilidades->nome[3+(4*escolha)]);
     return opc;
 }
 
