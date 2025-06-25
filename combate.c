@@ -4,25 +4,13 @@
 #include "miniaudio.h"
 #include "TerminalEngine.h"
 
-#define TAM_NOME 30
-
-typedef struct {
-
-    char nome[TAM_NOME];
-    int dano;
-    int custo;
-} Ataque;
-
-Ataque ataques[4] = {
-    {"Chama Flamejante", 50, 10},
-    {"Golpe de Gelo", 40, 8},
-    {"Raio Solar", 60, 12},
-    {"Soco Rápido", 20, 4}
-};
-
-
 int telaAtaques(int escolha){
-    int opc = menu("                      ", 1, 4, habilidades->nome[0+(4*escolha)], habilidades->nome[1+(4*escolha)], habilidades->nome[2+(4*escolha)], habilidades->nome[3+(4*escolha)]);
+    int opc;
+    if(escolha == 1){
+        opc = menu("                      ", 1, 4, habilidades->nome[0], habilidades->nome[1], habilidades->nome[2], habilidades->nome[3]);
+    }else{
+        opc = menu("                      ", 1, 4, habilidades->nome[0+(4*escolha)], habilidades->nome[1+(4*escolha)], habilidades->nome[2+(4*escolha)], habilidades->nome[3+(4*escolha)]);
+    }
     return opc;
 }
 
