@@ -3,6 +3,7 @@
 #include "TerminalEngine.h"
 #include <stdlib.h>
 #include "class.h"
+#include "inimigos.h"
 /*                                -------------AVISO----------
 * QUANDO ESTIVER TESTANDO SEU CÓDIGO, NÃO ESQUEÇA DE APAGAR TUDO O QUE DEIXOU AQUI PARA TESTES.
 * NÃO DE PUSH COM CÓDIGO DE TESTE AQUI. TAMBÉM NÃO DE PUSH COM OS EXECUTAVEIS, SEMPRE DE MAKE CLEAN.

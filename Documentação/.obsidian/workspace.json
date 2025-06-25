@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GameProjectBCC/Informações.md",
+                "file": "Tutoriais/Github.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Informações"
+              "title": "Github"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -160,16 +160,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "54ffb780868e16c5",
   "lastOpenFiles": [
+    "GameProjectBCC/Informações.md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/init_audio().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som_simples().md",
@@ -177,7 +178,6 @@
     "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions",
-    "GameProjectBCC/Informações.md",
     "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
     "Tutoriais/Github.md",
     "Tutoriais/Makefile.md",

@@ -1,0 +1,72 @@
+[33mcommit 2f74d4a140bb1b5660d872bf925dec237f3dd9a1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Merge: a0483ea b3d7f6b
+Author: Filipe Nunes <filipejifc@gmail.com>
+Date:   Mon Jun 23 20:55:57 2025 -0300
+
+    commit feito
+
+[33mcommit a0483ea785d6ace9248ccf907ff9d73b9f6a19f4[m
+Author: Filipe Nunes <filipejifc@gmail.com>
+Date:   Mon Jun 23 20:06:20 2025 -0300
+
+    gnenhuma mudança
+
+[33mcommit b3d7f6b57d0a3e8091a19c8f6dc29fd8d0950143[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Sun Jun 22 15:29:01 2025 -0300
+
+    Documentação atualizada
+
+[33mcommit 23b8bdf4b44d13696035f47399eaf2ebf0024d3f[m[33m ([m[1;31morigin/audio-implementation[m[33m)[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Sat Jun 21 22:20:54 2025 -0300
+
+    Novas funções e atualizações pra funções existentes da terminalEngine.h
+
+[33mcommit 4510ff4c1c33793a5ab151d5715aa65698cffdfe[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Sat Jun 21 18:46:17 2025 -0300
+
+    Documentação atualizada.
+
+[33mcommit 5a2af9fdcf3d6386fb3d15d5421dc9e3be0d7e4a[m[33m ([m[1;31morigin/menu-interaction[m[33m)[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Sat Jun 21 18:32:06 2025 -0300
+
+    Novas funções; Mudança de nomes: buscaOrdenada() > buscaLinear()
+
+[33mcommit b425dd85918f0b3c7153172487075893bb946a15[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 16:06:29 2025 -0300
+
+    Projeto delimitado
+
+[33mcommit e380625e4f1680c19fa827ef2a5edb2ccade64e8[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 14:00:29 2025 -0300
+
+    documentação atualizada.
+
+[33mcommit 5a1a6980771215223b594772e448a39ce573202a[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 13:53:53 2025 -0300
+
+    Makefile e documentação atualizada.
+
+[33mcommit 772b99908687b2e53279cd8776337257b537498c[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 13:38:56 2025 -0300
+
+    buscaOrdenada implementada em TerminalEngine.h
+
+[33mcommit 3a1aee5a8384395485fc389ec52b331e3a7dd573[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 13:06:53 2025 -0300
+
+    criação da documentação
+
+[33mcommit d3001b3f7c5c8e8a6798041dcb4dd4fefb55af4b[m
+Author: Eduardo Basquiat <flatbed@tutanota.com>
+Date:   Tue Jun 17 11:53:40 2025 -0300
+
+    Inicialização + valores iniciais
