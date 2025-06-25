@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "miniaudio.h"
 #include "TerminalEngine.h"
 
@@ -20,8 +21,8 @@ Ataque ataques[4] = {
 };
 
 
-int telaAtaques(){
-    int opc = menu("                      ", 1, 4, ataques->nome[0], ataques->nome[1], ataques->nome[2], ataques->nome[3]);
+int telaAtaques(int escolha){
+    int opc = menu("                      ", 1, 4, habilidades->nome[0+escolha], habilidades->nome[1+escolha], habilidades->nome[2], ataques->nome[3]);
     return opc;
 }
 
@@ -31,13 +32,13 @@ int telaInventario(int *inv){
 }
 
 
-int combate(){
+int combate(int escolha){
     int opc;
     int inv[2] =   {5, 5}; 
     while(1){
         opc = menu("                      ", 1, 2, "Lutar", "Inventario");
         if(opc = 1){
-            telaAtaques();
+            telaAtaques(escolha);
         }else if(opc = 2){
             telaInventario(inv);
         }
