@@ -24,6 +24,16 @@ static ClasseInfo classes[] = {
     {5, "Ladrão", 90, 16, 14}
 };
 
+const char* nomes_classes[MAX_CLASSES]; // isso armazena os nomes
+
+const char** obter_nomes_classes() {
+    for (int i = 0; i < MAX_CLASSES; i++) {
+        nomes_classes[i] = classes[i].nome;
+    }
+    return nomes_classes;
+}
+
+
 // nos vetores de habilidades, o primeiro numero é a classe, basicamente é o id da classe
 
 static Habilidade habilidades[] = {

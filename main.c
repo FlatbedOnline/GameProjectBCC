@@ -3,7 +3,7 @@
 #include "TerminalEngine.h"
 #include <stdlib.h>
 #include "class.h"
-#include "inimigos.h"
+#include "inimigo.h"
 /*                                -------------AVISO----------
 * QUANDO ESTIVER TESTANDO SEU CÓDIGO, NÃO ESQUEÇA DE APAGAR TUDO O QUE DEIXOU AQUI PARA TESTES.
 * NÃO DE PUSH COM CÓDIGO DE TESTE AQUI. TAMBÉM NÃO DE PUSH COM OS EXECUTAVEIS, SEMPRE DE MAKE CLEAN.
@@ -18,80 +18,59 @@ char nome_classe[20];
 printf("Bem vindo Aventureiro! \n");
 printf("Escolha a classe do seu personagem \n");
 printf("\n");
-printf("=========== GUERREIRO ===========\n"
-"Um combatente equilibrado, com boa vida e defesa.\n"
-"HP:\t\t120\n"
-"Ataque Base:\t20\n"
-"PP:\t\t10\n\n"
+
+printf(
+"=========== GUERREIRO ===========       ============= MAGO ==============\n"
+"Um combatente equilibrado,              Frágil, mas com ataques poderosos\n"
+"com boa vida e defesa.                 e variados.\n"
+"HP:         120                         HP:         80\n"
+"Ataque Base:20                         Ataque Base:10\n"
+"PP:         10                         PP:         20\n\n"
+"Habilidades:                            Habilidades:\n"
+" - Golpe Escudo: 15 de dano             - Bola de Fogo: 30 de dano (4 PP)\n"
+"   + atordoamento (2 PP)                - Raio Gélido: 20 de dano +\n"
+" - Investida: 35 de dano (4 PP)           reduz velocidade (3 PP)\n"
+" - Postura Defensiva:                   - Cura Arcana: Recupera 30 HP (5 PP)\n"
+"   reduz dano (3 PP)\n"
+"==================================     ==================================\n\n");
+
+printf(
+"=========== BÁRBARO ============        ========== ARQUEIRO ============\n"
+"Muito dano e vida, mas sem              Ágil e preciso, com chance\n"
+"defesa mágica.                         de crítico e longo alcance.\n"
+"HP:         150                         HP:         100\n"
+"Ataque Base:25                         Ataque Base:18\n"
+"PP:         6                          PP:         12\n\n"
+"Habilidades:                            Habilidades:\n"
+" - Esmagada Brutal: 50 de dano          - Tiro Certeiro: 25 de dano\n"
+"   (50%% de errar) (3 PP)                 + 30%% crítico (3 PP)\n"
+" - Grito Selvagem: +10 ATK              - Rajada: 3x10 de dano (5 PP)\n"
+"   por 2 turnos (2 PP)                  - Flecha Envenenada:\n"
+" - Fúria: 40 de dano + -10 HP             15 de dano + veneno 3T (4 PP)\n"
+"   (3 PP)\n"
+"==================================     ==================================\n\n");
+
+printf(
+"============= LADRÃO ==============\n"
+"\n"
+"Especialista em furtividade, ataques rápidos e evasivos.\n"
+"HP:         90\n"
+"Ataque Base:16\n"
+"PP:         14\n\n"
 "Habilidades:\n"
-" - Golpe Escudo: 15 de dano + atordoamento (2 PP)\n"
-" - Investida: 35 de dano (4 PP)\n"
-" - Postura Defensiva: Reduz dano por 2 turnos (3 PP)\n"
-"==================================\n \n"
-);
+" - Golpe Sombrio: 20 de dano + chance de esquiva (3 PP)\n"
+" - Roubo de Vida: 15 de dano + recupera metade (4 PP)\n"
+" - Passo Sombrio: 2x15 de dano (5 PP)\n"
+"==================================\n\n");
 
-printf(
-  "============ MAGO ==============\n"
-  "Frágil, mas com ataques poderosos e variados.\n"
-  "HP:\t\t80\n"
-  "Ataque Base:\t10\n"
-  "PP:\t\t20\n\n"
-  "Habilidades:\n"
-  " - Bola de Fogo: 30 de dano (4 PP)\n"
-  " - Raio Gélido: 20 de dano + reduz velocidade (3 PP)\n"
-  " - Cura Arcana: Recupera 30 HP (5 PP)\n"
-  "==================================\n\n"
-);
-
-printf(
-  "=========== BÁRBARO ============\n"
-  "Muito dano e muita vida, mas sem defesa mágica.\n"
-  "HP:\t\t150\n"
-  "Ataque Base:\t25\n"
-  "PP:\t\t6\n\n"
-  "Habilidades:\n"
-  " - Esmagada Brutal: 50 de dano (50%% de chance de errar) (3 PP)\n"
-  " - Grito Selvagem: Aumenta ataque em 10 por 2 turnos (2 PP)\n"
-  " - Fúria: 40 de dano e se machuca em 10 (3 PP)\n"
-  "==================================\n\n"
-);
-
-printf(
-  "=========== ARQUEIRO ============\n"
-  "Ágil e preciso, com chance de crítico e habilidades de longo alcance.\n"
-  "HP:\t\t100\n"
-  "Ataque Base:\t18\n"
-  "PP:\t\t12\n\n"
-  "Habilidades:\n"
-  " - Tiro Certeiro: 25 de dano (30%% chance de crítico) (3 PP)\n"
-  " - Rajada de Flechas: 3x10 de dano em um turno (5 PP)\n"
-  " - Flecha Envenenada: 15 de dano + envenena por 3 turnos (4 PP)\n"
-  "==================================\n\n"
-);
-
-printf(
-  "=========== LADRÃO =============\n"
-  "Especialista em furtividade, ataques rápidos e evasivos.\n"
-  "HP:\t\t90\n"
-  "Ataque Base:\t16\n"
-  "PP:\t\t14\n\n"
-  "Habilidades:\n"
-  " - Golpe Sombrio: 20 de dano + chance de esquiva aumentada (3 PP)\n"
-  " - Roubo de Vida: 15 de dano e recupera metade como HP (4 PP)\n"
-  " - Passo Sombrio: Avança e ataca duas vezes com 15 de dano cada (5 PP)\n"
-  "==================================\n"
-);
-
-printf("Escolha sua classe:\n"
-"1 - Guerreiro\n"
-"2 - Mago\n"
-"3 - Bárbaro\n"
-"4 - Arqueiro\n"
-"5 - Ladrão\n");
-scanf("%d", &escolha);
+init_audio();
+const char** opcoes = obter_nomes_classes();
+escolha = menu("Escolha sua classe:", 1, MAX_CLASSES,
+               opcoes[0], opcoes[1], opcoes[2], opcoes[3], opcoes[4]);
 
 classe(escolha, &PP, &ATK, &HP, nome_classe);
 
+printf("\n");
 printf("Classe escolhida: %s\n", nome_classe);
 printf("Atributos do personagem:\n");
 printf("HP: %d\n", HP);
