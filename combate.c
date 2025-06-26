@@ -17,12 +17,14 @@ int telaInventario(int *inv){
 
 
 int combate(int escolha){
-    int opc;
-    int inv[2] =   {5, 5}; 
+    //status do jogador, e inimigo; 
+    int opc, atk;
+    int inv[2] = {5, 5}; 
     while(1){
         opc = menu("                      ", 1, 2, "Lutar", "Inventario");
         if(opc = 1){
-            telaAtaques(escolha);
+            atk = telaAtaques(escolha);
+
         }else if(opc = 2){
             telaInventario(inv);
         }
