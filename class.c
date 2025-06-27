@@ -2,21 +2,7 @@
 #include <string.h>
 #include "class.h"
 
-typedef struct {
-    int id;
-    char nome[20];
-    int HP, ATK, PP;
-} ClasseInfo;
-
-typedef struct {
-    int classe_id;         
-    char nome[30];       
-    char descricao[100];    
-    int dano, custo_pp, AOT, cura; 
-    float stun;         
-} Habilidade;
-
-static ClasseInfo classes[] = {
+ClasseInfo classes[] = {
     {1, "Guerreiro", 120, 20, 10},
     {2, "Mago", 80, 10, 20},
     {3, "Bárbaro", 150, 25, 6},
@@ -26,7 +12,7 @@ static ClasseInfo classes[] = {
 
 // nos vetores de habilidades, o primeiro numero é a classe, basicamente é o id da classe
 
-static Habilidade habilidades[] = {
+Habilidade habilidades[] = {
     {1, "Golpe Espada", "10 de dano", 10, 0, 0, 0, 0},
     {1, "Golpe Escudo", "15 de dano + atordoamento.", 15, 2, 0, 0, 1},
     {1, "Investida", "35 de dano.", 35, 4, 0, 0, 0},

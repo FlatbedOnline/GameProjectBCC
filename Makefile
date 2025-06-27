@@ -2,7 +2,7 @@
 EXEC = programa
 
 # Lista de arquivos fonte
-SRC = main.c TerminalEngine.c miniaudio.c class.c
+SRC = main.c TerminalEngine.c miniaudio.c class.c combate.c inimigo.c
 
 # Compilador
 CC = gcc

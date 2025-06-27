@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
+=======
+                "file": "Tutoriais/Github.md",
+>>>>>>> 15a44e931d0b2a63e7683f0f985d4a6436a3fb9c
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "menu()"
+=======
+              "title": "Github"
+>>>>>>> 15a44e931d0b2a63e7683f0f985d4a6436a3fb9c
             }
           }
         ]
@@ -44,7 +52,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -160,16 +168,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "7483df22ef623043",
   "lastOpenFiles": [
+<<<<<<< HEAD
+=======
+    "GameProjectBCC/Informações.md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/init_audio().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som_simples().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/shutdown_audio().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaLinear().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/menu().md",
+    "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions",
+    "GameProjectBCC/Documentação/TerminalEngine.h/buscaOrdenada().md",
+>>>>>>> 15a44e931d0b2a63e7683f0f985d4a6436a3fb9c
     "Tutoriais/Github.md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/shutdown_audio().md",
     "GameProjectBCC/Documentação/TerminalEngine.h/Audio functions/play_som().md"
