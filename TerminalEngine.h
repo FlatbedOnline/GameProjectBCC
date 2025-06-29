@@ -17,8 +17,9 @@ int classe(int escolha, int *PP, int *ATK, int *HP, char *nome_classe);
 //combate Joao Pedro Veloso
 int telaInventario(int *inv);
 int telaAtaques(int escolha);
-int combate(int escolha);
+int combate(int escolha, int inimigo);
 int turnoinimigo();
+int aleatorio(int max);
 
 #endif // !TERMINALENGINE_H 
 #define TERMINALENGINE_H

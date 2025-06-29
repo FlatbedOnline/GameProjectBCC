@@ -14,21 +14,25 @@ InimigoInfo inimigos[] = {
 
 //parte das habilidades dos inimigos
 HabilidadeInimigo habilidadesInimigos[] = {
-    {1, "Golpe Sangrento", "10 de dano + sangramento por 2 turnos", 10, 2},
-    {1, "Golpe Investida", "20 de dano, 50% de chance de cair", 20, 2},
+    {1, "Golpe Basico", "10 de dano", 10, 0},
+    {1, "Golpe Sangrento", "20 de dano", 20, 2},
+    {1, "Golpe Investida", "20 de dano", 20, 2},
 
+    {2, "Golpe Basico", "15 de dano", 12, 0},
     {2, "Golpe do Túmulo", "15 de dano", 15, 2},
     {2, "Ossada Giratória", "25 de dano giratório", 25, 3},
 
+    {3, "Golpe Basico", "20 de dano", 15, 0},
     {3, "Jato Ácido", "20 de dano direto", 20, 3},
     {3, "Pancada Pegajosa", "15 de dano físico", 15, 2},
 
+    {4, "Golpe Basico", "18 de dano", 18, 0},
     {4, "Toque Etéreo", "20 de dano", 20, 3},
     {4, "Sussurro Assombrado", "15 de dano + chance de atordoar", 15, 4},
 
-    {5, "Mordida Vampírica", "30 de dano e cura 10 HP", 30, 4},
-    {5, "Aura Sangrenta", "20 de dano + reduz precisão", 20, 5},
-    {5, "Olhar Hipnótico", "Impede o jogador de atacar 1 turno", 0, 6}
+    {1, "Golpe Basico", "20 de dano", 20, 0},
+    {5, "Mordida Vampírica", "30 de dano", 30, 4},
+    {5, "Aura Sangrenta", "35 de dano", 35, 5},
 };
 
 //parte para  receber os dados por id

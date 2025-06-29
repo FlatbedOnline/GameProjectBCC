@@ -8,6 +8,11 @@
 
 #define MINIAUDIO_IMPLEMENTATION 
 
+int aleatorio(int max) {
+    if (max <= 0) return 0; // evita divisão por zero ou retorno inválido
+    return rand() % max;
+}
+
 char getch() {
     struct termios oldt, newt;
     char ch;

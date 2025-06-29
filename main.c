@@ -2,6 +2,7 @@
 #include <stdarg.h>
 #include "TerminalEngine.h"
 #include <stdlib.h>
+#include <time.h>
 #include "class.h"
 /*                                -------------AVISO----------
 * QUANDO ESTIVER TESTANDO SEU CÓDIGO, NÃO ESQUEÇA DE APAGAR TUDO O QUE DEIXOU AQUI PARA TESTES.
@@ -10,7 +11,7 @@
 
 
 int main(){
-
+srand(time(NULL));
 int escolha, HP, ATK, PP;
 char nome_classe[20];
 
@@ -75,10 +76,15 @@ printf("HP: %d\n", HP);
 printf("ATK: %d\n", ATK);
 printf("PP: %d\n", PP);
 
-combate(escolha-1);
-
+for(int i = 0; i < 5; i++){
+  printf("Oponente: %s\n", inimigos[i].nome);
+  if(combate(escolha-1, i) == 1){
+    printf("Voce ganhou a batalha contra %s, pode prosseguir\n", inimigos[i].nome);
+  }else{
+    break;
+  }
+}
   return 0;
-  
 }
 
 
