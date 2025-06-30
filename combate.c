@@ -33,8 +33,10 @@ int combate(int escolha, int inimigo){
         opc = menu("                      ", 1, 2, "Lutar", "Inventario");
         if(opc == 1){
             atk = telaAtaques(escolha);
-            hpInimigo -= habilidades[(atk-1)+(4*escolha)].dano;
-            ppPlayer -= habilidades[(atk-1)+(4*escolha)].custo_pp;
+            if(ppPlayer > habilidades[(atk-1)+(4*escolha)].custo_pp){
+                hpInimigo -= habilidades[(atk-1)+(4*escolha)].dano;
+                ppPlayer -= habilidades[(atk-1)+(4*escolha)].custo_pp;
+            }
             if (hpInimigo < 0) hpInimigo = 0;
         }else if(opc == 2){
             item = telaInventario(inv);
@@ -48,7 +50,12 @@ int combate(int escolha, int inimigo){
                 inv[1] -= 1;
             }
         }
-        hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano;
+        if(hpPlayer < 0) hpPlayer = 0;
+        if(ppPlayer < 0) ppPlayer = 0;
+        if(habilidades[(atk-1)+(4*escolha)].stun != 1){
+            hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano;
+
+        }
         
         if(hpPlayer == 0){
             return 0;
