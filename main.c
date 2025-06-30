@@ -20,48 +20,30 @@ printf("Escolha a classe do seu personagem \n");
 printf("\n");
 
 printf(
-"=========== GUERREIRO ===========       ============= MAGO ==============\n"
-"Um combatente equilibrado,              Frágil, mas com ataques poderosos\n"
-"com boa vida e defesa.                 e variados.\n"
-"HP:         120                         HP:         80\n"
-"Ataque Base:20                         Ataque Base:10\n"
-"PP:         10                         PP:         20\n\n"
-"Habilidades:                            Habilidades:\n"
-" - Golpe Escudo: 15 de dano             - Bola de Fogo: 30 de dano (4 PP)\n"
-"   + atordoamento (2 PP)                - Raio Gélido: 20 de dano +\n"
-" - Investida: 35 de dano (4 PP)           reduz velocidade (3 PP)\n"
-" - Postura Defensiva:                   - Cura Arcana: Recupera 30 HP (5 PP)\n"
-"   reduz dano (3 PP)\n"
-"==================================     ==================================\n\n");
+"=========== GUERREIRO ===========   ============= MAGO =============   ============ BÁRBARO ============\n"
+"Um combatente equilibrado,          Frágil, ataques poderosos          Muito dano, pouca defesa mágica\n"
+"com boa vida e defesa.              e variados.                        e muita vida.\n"
+"HP:         120                     HP:         80                     HP:         150\n"
+"ATK Base:   20                      ATK Base:   10                     ATK Base:   25\n"
+"PP:         10                      PP:         20                     PP:         6\n\n"
+"Habilidades:                        Habilidades:                       Habilidades:\n"
+"- Golpe Escudo (2PP): 15 dano       - Bola de Fogo (4PP): 30 dano      - Esmagada Brutal (3PP): 50 dano\n"
+"- Investida (4PP): 35 dano          - Raio Gélido (3PP): 20 dano       - Grito Selvagem (2PP): +10 ATK\n"
+"- Postura Defensiva (3PP): defesa   - Cura Arcana (5PP): +30 HP        - Fúria (3PP): 40 dano, -10 HP\n"
+"==========================================================================================================\n\n");
 
 printf(
-"=========== BÁRBARO ============        ========== ARQUEIRO ============\n"
-"Muito dano e vida, mas sem              Ágil e preciso, com chance\n"
-"defesa mágica.                         de crítico e longo alcance.\n"
-"HP:         150                         HP:         100\n"
-"Ataque Base:25                         Ataque Base:18\n"
-"PP:         6                          PP:         12\n\n"
-"Habilidades:                            Habilidades:\n"
-" - Esmagada Brutal: 50 de dano          - Tiro Certeiro: 25 de dano\n"
-"   (50%% de errar) (3 PP)                 + 30%% crítico (3 PP)\n"
-" - Grito Selvagem: +10 ATK              - Rajada: 3x10 de dano (5 PP)\n"
-"   por 2 turnos (2 PP)                  - Flecha Envenenada:\n"
-" - Fúria: 40 de dano + -10 HP             15 de dano + veneno 3T (4 PP)\n"
-"   (3 PP)\n"
-"==================================     ==================================\n\n");
+"=========== ARQUEIRO ============   ============ LADRÃO =============   \n"
+"Ágil, preciso, crítico à distância  Furtivo, ataques duplos, evasivo   \n"
+"HP:         100                     HP:         90                      \n"
+"ATK Base:   18                      ATK Base:   16                      \n"
+"PP:         12                      PP:         14                      \n\n"
+"Habilidades:                        Habilidades:                        \n"
+"- Tiro Certeiro (3PP): 25 dano      - Golpe Sombrio (3PP): 20 dano     \n"
+"- Rajada (5PP): 3x10 dano           - Roubo de Vida (4PP): +HP         \n"
+"- Flecha Envenenada (4PP): veneno  - Passo Sombrio (5PP): 2x15 dano   \n"
+"========================================================================\n\n");
 
-printf(
-"============= LADRÃO ==============\n"
-"\n"
-"Especialista em furtividade, ataques rápidos e evasivos.\n"
-"HP:         90\n"
-"Ataque Base:16\n"
-"PP:         14\n\n"
-"Habilidades:\n"
-" - Golpe Sombrio: 20 de dano + chance de esquiva (3 PP)\n"
-" - Roubo de Vida: 15 de dano + recupera metade (4 PP)\n"
-" - Passo Sombrio: 2x15 de dano (5 PP)\n"
-"==================================\n\n");
 
 init_audio();
 escolha = menu("Escolha sua classe:", 1, 5,
