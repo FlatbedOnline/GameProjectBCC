@@ -62,7 +62,7 @@ int combate(int escolha, int inimigo){
             hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano;
         }
 
-        if(hpPlayer == 0){
+        if(hpPlayer <= 0){
             return 0;
             break;
         } else if(hpInimigo == 0){

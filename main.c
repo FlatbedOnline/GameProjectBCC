@@ -79,8 +79,9 @@ printf("PP: %d\n", PP);
 for(int i = 0; i < 5; i++){
   printf("Oponente: %s\n", inimigos[i].nome);
   if(combate(escolha-1, i) == 1){
-    printf("Voce ganhou a batalha contra %s, pode prosseguir\n", inimigos[i].nome);
+    printf("\nVoce ganhou a batalha contra %s, pode prosseguir\n", inimigos[i].nome);
   }else{
+    printf("\nPerdeu a batalha, GAME OVER\n");
     break;
   }
 }
