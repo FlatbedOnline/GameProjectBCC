@@ -41,7 +41,7 @@ printf(
 "Habilidades:                        Habilidades:                        \n"
 "- Tiro Certeiro (3PP): 25 dano      - Golpe Sombrio (3PP): 20 dano     \n"
 "- Rajada (5PP): 3x10 dano           - Roubo de Vida (4PP): +HP         \n"
-"- Flecha Envenenada (4PP): veneno  - Passo Sombrio (5PP): 2x15 dano   \n"
+"- Flecha Envenenada (4PP): 15 dano - Passo Sombrio (5PP): 2x15 dano   \n"
 "========================================================================\n\n");
 
 
@@ -63,6 +63,7 @@ for(int i = 0; i < 5; i++){
   if(combate(escolha-1, i) == 1){
     printf("Voce ganhou a batalha contra %s, pode prosseguir\n", inimigos[i].nome);
   }else{
+    printf("Game Over! Voce foi derrotado por %s\n", inimigos[i].nome);
     break;
   }
 }
