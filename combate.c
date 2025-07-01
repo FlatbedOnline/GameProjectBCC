@@ -35,7 +35,7 @@ int combate(int escolha, int inimigo){
 
         if(opc == 1){ // opc de escolhas do menu
             atk = telaAtaques(escolha);
-            if(ppPlayer > habilidades[(atk-1)+(4*escolha)].custo_pp){
+            if(ppPlayer >= habilidades[(atk-1)+(4*escolha)].custo_pp){
                 hpInimigo -= habilidades[(atk-1)+(4*escolha)].dano; // dano no inimigo
                 ppPlayer -= habilidades[(atk-1)+(4*escolha)].custo_pp; // reducao de pp
             }

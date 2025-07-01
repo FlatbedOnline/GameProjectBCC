@@ -16,10 +16,10 @@ printf(
 "ótimo para combate direto.          Ideal para ataques à distância.     \n"
 "HP:         125                     HP:         85                     HP:         140\n"
 "ATK Base:   17                      ATK Base:   8                      ATK Base:   21\n"
-"PP:         11                      PP:         22                     PP:         5\n\n"
+"PP:         11                      PP:         18                     PP:         5\n\n"
 "Habilidades:                        Habilidades:                       Habilidades:\n"
 "- Golpe Espada (0PP): 12 dano       - Ataque Mágico (0PP): 13 dano     - Ataque Machado (0PP): 20 dano\n"
-"- Golpe Escudo (2PP): 15 dano       - Bola de Fogo (4PP): 40 dano      - Esmagada Brutal (4PP): 45 dano\n"
+"- Golpe Escudo (2PP): 18 dano       - Bola de Fogo (5PP): 35 dano      - Esmagada Brutal (4PP): 45 dano\n"
 "- Investida (4PP): 35 dano          - Raio Gélido (3PP): 20 dano       - Lapada Seca (2PP): 25 dano\n"
 "- Postura Defensiva (3PP): bloqueia - Cura Arcana (5PP): +30 HP        - Fúria (3PP): 40 dano\n"
 "o dano de um round.                                                      \n"
@@ -80,7 +80,7 @@ narrativa("— Quem és tu? — minha voz sai áspera, enquanto puxo a arma inst
 
 narrativa("Ele se senta perto da chama vacilante da tocha, as sombras dançam no rosto enrugado.\n— Escute com atenção.\n— Há séculos, muito antes de impérios caírem, um artefato foi forjado pelo próprio deus Tales, agora adormecido.\n— O Amuleto carrega o poder de enxergar além das barreiras do tempo e da realidade.");
 
-narrativa("— Porém, este poder tem preço.\n— Aquele que o possuir poderá alcançar glória inimaginável... ou perder-se para sempre nas memórias esquecidas.\n— Por que você não o busca? — pergunto, a curiosidade e desconfiança misturadas.\n— Meus ossos são frágeis, a idade me aprisiona.\n— Mas você, com seu vigor e coragem, tem a chance que eu não tive.");
+narrativa("— Porém, este poder tem preço.\n— Aquele que o possuir poderá alcançar glória inimaginável... ou perder-se para sempre nas memórias esquecidas.\n— Por que você não o busca? — pergunto, a curiosidade e desconfiança misturadas.\n— Meus ossos são frágeis, a idade me aprisiona.\n Mas você, com seu vigor e coragem, tem a chance que eu não tive.");
 
 narrativa("— Traga o Amuleto para mim.\n— Serás recompensado com armas forjadas nas chamas da antiguidade, armas que cortam o próprio ar, arcos guiados pela vontade, magias que desafiam a morte.\n— Mas não será fácil. O caminho é traiçoeiro e cheio de horrores.\n— Aceita essa missão? Que os deuses guiem seus passos.");
 
@@ -112,7 +112,7 @@ narrativa("Após o combate, me apoio contra a parede fria, tentando recuperar o 
 
 narrativa("Sigo adiante e noto que as inscrições nas paredes ficam mais elaboradas, quase vivas, como se tentassem me contar um segredo.\nAs sombras parecem se mover de forma inquietante, e o silêncio torna-se quase sufocante.\nPosso jurar que algo me observa, aguardando o momento certo para atacar.");
 
-narrativa("Um som metálico corta o ar.\nDas sombras ergue-se um esqueleto, ainda trajando armadura corroída pelo tempo, sua espada reluz sombria.");
+narrativa("Um som metálico corta o ar.\nDas sombras ergue-se um esqueleto, ainda trajando armadura corroída pelo tempo, com sua espada enferrujada.");
 
 printf("Oponente: %s\n", inimigos[1].nome);
 if (combate(escolha - 1, 1) == 1) {

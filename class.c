@@ -3,23 +3,24 @@
 #include "class.h"
 
 ClasseInfo classes[] = {
-    {1, "Guerreiro", 125, 17, 11},  // Tanque médio, dano médio, PP o suficiente
-    {2, "Mago", 85, 8, 22},         // Frágil, mas se usar bem as magias, é devastador
-    {3, "Bárbaro", 140, 21, 5},     // Muito dano e HP, mas PP MUITO limitado
-    {4, "Arqueiro", 100, 16, 14},   // Equilibrado, ideal pra ataques estratégicos
-    {5, "Ladrão", 100, 14, 16}       // Ágil, crítico/esquiva, mas frágil
+    // id, nome, HP, ATK, PP
+    {1, "Guerreiro", 125, 12, 11},  
+    {2, "Mago", 85, 8, 18},         
+    {3, "Bárbaro", 140, 21, 5},     
+    {4, "Arqueiro", 100, 16, 14},   
+    {5, "Ladrão", 100, 14, 16}       
 };
 
 // nos vetores de habilidades, o primeiro numero é a classe, basicamente é o id da classe
 
 Habilidade habilidades[] = {
     {1, "Golpe Espada", "12 de dano", 12, 0, 0, 0, 0},
-    {1, "Golpe Escudo", "15 de dano.", 15, 2, 0, 0, 1},
+    {1, "Golpe Escudo", "15 de dano.", 18, 2, 0, 0, 1},
     {1, "Investida", "35 de dano.", 35, 4, 0, 0, 0},
     {1, "Postura Defensiva", "Bloqueia o dano inteiro de um round.", 0, 3, 0, 0, 1},
 
     {2, "Ataque magico", "13 de dano", 13, 0, 0, 0, 0},
-    {2, "Bola de Fogo", "40 de dano.", 40, 4, 0, 0, 0},
+    {2, "Bola de Fogo", "35 de dano.", 35, 5, 0, 0, 0},
     {2, "Raio Gélido", "20 de dano", 20, 3, 0, 0, 1},
     {2, "Cura Arcana", "Recupera 30 HP.", 0, 5, 0, 30, 0},
 
