@@ -12,10 +12,32 @@
 
 int main(){
 srand(time(NULL));
-int escolha, HP, ATK, PP;
+int escolha, HP, ATK, PP, escolhamenu;
 char nome_classe[20];
 
-printf("Bem vindo Aventureiro! \n");
+
+printf(
+"    ███        ▄████████  ▄█          ▄████████    ▄████████ \n"
+"▀█████████▄   ███    ███ ███         ███    ███   ███    ███ \n"
+"   ▀███▀▀██   ███    ███ ███         ███    █▀    ███    █▀  \n"
+"    ███   ▀   ███    ███ ███        ▄███▄▄▄       ███        \n"
+"    ███     ▀███████████ ███       ▀▀███▀▀▀     ▀███████████ \n"
+"    ███       ███    ███ ███         ███    █▄           ███ \n"
+"    ███       ███    ███ ███▌    ▄   ███    ███    ▄█    ███ \n"
+"   ▄████▀     ███    █▀  █████▄▄██   ██████████  ▄████████▀  \n"
+"                         ▀                                   \n"
+);
+
+init_audio();
+escolhamenu = menu("Escolha sua classe:", 1, 2,
+               "Jogar", "Sair");
+if ((escolhamenu == 2)) {
+    printf("Saindo do jogo...\n");
+    return 0;
+}
+{
+
+    printf("\n Bem vindo Aventureiro! \n");
 printf("Escolha a classe do seu personagem \n");
 printf("\n");
 
@@ -45,7 +67,6 @@ printf(
 "========================================================================\n\n");
 
 
-init_audio();
 escolha = menu("Escolha sua classe:", 1, 5,
                "Guerreiro", "Mago", "Barbaro", "Arqueiro", "Ladrao");
 
@@ -69,5 +90,13 @@ for(int i = 0; i < 5; i++){
 }
   return 0;
 }
+}
+
+
+
+
+
+
+
 
 

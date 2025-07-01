@@ -30,7 +30,7 @@ HabilidadeInimigo habilidadesInimigos[] = {
     {4, "Toque Etéreo", "20 de dano", 20, 3},
     {4, "Sussurro Assombrado", "15 de dano + chance de atordoar", 15, 4},
 
-    {1, "Golpe Basico", "20 de dano", 20, 0},
+    {5, "Golpe Basico", "20 de dano", 20, 0},
     {5, "Mordida Vampírica", "30 de dano", 30, 4},
     {5, "Aura Sangrenta", "35 de dano", 35, 5},
 };
