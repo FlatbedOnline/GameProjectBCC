@@ -29,7 +29,7 @@ printf(
 );
 
 init_audio();
-escolhamenu = menu("Escolha sua classe:", 1, 2,
+escolhamenu = menu("Escolha:", 1, 2,
                "Jogar", "Sair");
 if ((escolhamenu == 2)) {
     printf("Saindo do jogo...\n");
