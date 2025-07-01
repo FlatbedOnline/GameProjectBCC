@@ -5,22 +5,22 @@
 
 //parte dos inimigos
 InimigoInfo inimigos[] = {
-    {1, "Goblin", 30, 7, 6},
-    {2, "Esqueleto Guerreiro", 90, 15, 6},
-    {3, "Slime Tóxico", 75, 10, 6},
-    {4, "Espírito Sombrio", 85, 13, 10},
-    {5, "Vampiro Ancestral", 200, 25, 12}
+    {1, "Goblin", 60, 7, 6},
+    {2, "Esqueleto Guerreiro", 80, 10, 6},
+    {3, "Slime Tóxico", 100, 14, 6},
+    {4, "Espírito Sombrio", 110, 15, 10},
+    {5, "Vampiro Ancestral", 130, 17, 10}
 };
 
 //parte das habilidades dos inimigos
 HabilidadeInimigo habilidadesInimigos[] = {
     {1, "Golpe Basico", "10 de dano", 10, 0},
-    {1, "Golpe Sangrento", "20 de dano", 20, 2},
+    {1, "Golpe Sangrento", "20 de dano", 15, 2},
     {1, "Golpe Investida", "20 de dano", 20, 2},
 
     {2, "Golpe Basico", "15 de dano", 12, 0},
     {2, "Golpe do Túmulo", "15 de dano", 15, 2},
-    {2, "Ossada Giratória", "25 de dano giratório", 25, 3},
+    {2, "Ossada Giratória", "25 de dano giratório", 20, 3},
 
     {3, "Golpe Basico", "20 de dano", 15, 0},
     {3, "Jato Ácido", "20 de dano direto", 20, 3},
@@ -30,9 +30,9 @@ HabilidadeInimigo habilidadesInimigos[] = {
     {4, "Toque Etéreo", "20 de dano", 20, 3},
     {4, "Sussurro Assombrado", "15 de dano + chance de atordoar", 15, 4},
 
-    {5, "Golpe Basico", "20 de dano", 20, 0},
-    {5, "Mordida Vampírica", "30 de dano", 30, 4},
-    {5, "Aura Sangrenta", "35 de dano", 35, 5},
+    {5, "Golpe Basico", "20 de dano", 17, 0},
+    {5, "Mordida Vampírica", "30 de dano", 25, 4},
+    {5, "Aura Sangrenta", "35 de dano", 20, 5},
 };
 
 //parte para  receber os dados por id

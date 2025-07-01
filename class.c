@@ -3,40 +3,40 @@
 #include "class.h"
 
 ClasseInfo classes[] = {
-    {1, "Guerreiro", 120, 20, 10},
-    {2, "Mago", 80, 10, 20},
-    {3, "Bárbaro", 150, 25, 6},
-    {4, "Arqueiro", 100, 18, 12},
-    {5, "Ladrão", 90, 16, 14}
+    {1, "Guerreiro", 125, 17, 11},  // Tanque médio, dano médio, PP o suficiente
+    {2, "Mago", 85, 8, 22},         // Frágil, mas se usar bem as magias, é devastador
+    {3, "Bárbaro", 140, 21, 5},     // Muito dano e HP, mas PP MUITO limitado
+    {4, "Arqueiro", 100, 16, 14},   // Equilibrado, ideal pra ataques estratégicos
+    {5, "Ladrão", 100, 14, 16}       // Ágil, crítico/esquiva, mas frágil
 };
 
 // nos vetores de habilidades, o primeiro numero é a classe, basicamente é o id da classe
 
 Habilidade habilidades[] = {
-    {1, "Golpe Espada", "10 de dano", 10, 0, 0, 0, 0},
-    {1, "Golpe Escudo", "15 de dano + atordoamento.", 15, 2, 0, 0, 1},
+    {1, "Golpe Espada", "12 de dano", 12, 0, 0, 0, 0},
+    {1, "Golpe Escudo", "15 de dano.", 15, 2, 0, 0, 1},
     {1, "Investida", "35 de dano.", 35, 4, 0, 0, 0},
     {1, "Postura Defensiva", "Bloqueia o dano inteiro de um round.", 0, 3, 0, 0, 1},
 
-    {2, "Ataque magico", "10 de dano", 10, 0, 0, 0, 0},
-    {2, "Bola de Fogo", "30 de dano.", 30, 4, 0, 0, 0},
-    {2, "Raio Gélido", "20 de dano + atordoamento.", 20, 3, 0, 0, 1},
+    {2, "Ataque magico", "13 de dano", 13, 0, 0, 0, 0},
+    {2, "Bola de Fogo", "40 de dano.", 40, 4, 0, 0, 0},
+    {2, "Raio Gélido", "20 de dano", 20, 3, 0, 0, 1},
     {2, "Cura Arcana", "Recupera 30 HP.", 0, 5, 0, 30, 0},
 
-    {3, "Ataque Machado", "10 de dano", 20, 0, 0, 0, 0},
-    {3, "Esmagada Brutal", "50 de dano.", 50, 4, 0, 0, 0},
-    {3, "Grito Selvagem", "Aumenta ataque em 10 por 2 turnos.", 0, 2, 0, 0, 0},
+    {3, "Ataque Machado", "20 de dano", 20, 0, 0, 0, 0},
+    {3, "Esmagada Brutal", "45 de dano.", 45, 4, 0, 0, 0},
+    {3, "Lapada Seca", "25 de dano", 25, 2, 0, 0, 0},
     {3, "Fúria", "40 de dano.", 40, 3, 0, 0, 0},
 
     {4, "Flechada", "10 de dano", 10, 0, 0, 0, 0},
     {4, "Tiro Certeiro", "25 de dano.", 25, 3, 0, 0, 0},
-    {4, "Rajada de Flechas", "3x10 de dano em um turno.", 30, 5, 0, 0, 0}, 
-    {4, "Flecha Envenenada", "15 de dano + envenena por 3 turnos.", 15, 4, 1, 0, 0}, //dano do veneno nao fiz mas bote 2 ou 3 por turno
+    {4, "Rajada de Flechas", "3x10.", 30, 5, 0, 0, 0}, 
+    {4, "Flecha Envenenada", "27 de dano.", 27, 4, 1, 0, 0}, 
 
-    {5, "Facada", "10 de dano", 10, 0, 0, 0, 0},
-    {5, "Golpe Sombrio", "20 de dano", 20, 3, 0, 0, 0},
-    {5, "Roubo de Vida", "16 de dano e recupera metade como HP.", 15, 4, 0, 1, 0},
-    {5, "Passo Sombrio", "Avança e ataca duas vezes com 15 de dano cada", 30, 5, 0, 0, 0}, //se tiver animação de ataque colocar 2 lapadas neste ataque
+    {5, "Facada", "12 de dano", 12, 0, 0, 0, 0},
+    {5, "Golpe Sombrio", "25 de dano", 25, 2, 0, 0, 0},
+    {5, "Apunhalada", "16 de dano.", 16, 1, 0, 1, 0},
+    {5, "Passo Sombrio", "Avança e ataca duas vezes com 15 de dano cada", 30, 3, 0, 0, 0}, 
 
 };
 

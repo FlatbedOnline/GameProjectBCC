@@ -31,41 +31,44 @@ int combate(int escolha, int inimigo){
 
     while(1){
         printf("\33[2K\rVida Player: %d - PP: %d | Vida Inimigo: %d\n", hpPlayer, ppPlayer, hpInimigo);
-        opc = menu("                      ", 1, 2, "Lutar", "Inventario");
+        opc = menu("                      ", 1, 2, "Lutar", "Inventario"); // menu
 
-        if(opc == 1){
+        if(opc == 1){ // opc de escolhas do menu
             atk = telaAtaques(escolha);
             if(ppPlayer > habilidades[(atk-1)+(4*escolha)].custo_pp){
-                hpInimigo -= habilidades[(atk-1)+(4*escolha)].dano;
-                ppPlayer -= habilidades[(atk-1)+(4*escolha)].custo_pp;
+                hpInimigo -= habilidades[(atk-1)+(4*escolha)].dano; // dano no inimigo
+                ppPlayer -= habilidades[(atk-1)+(4*escolha)].custo_pp; // reducao de pp
             }
-            if (hpInimigo < 0) hpInimigo = 0;
+            if (hpInimigo < 0) hpInimigo = 0; // vida minima do inimigo
         } else if(opc == 2){
-            item = telaInventario(inv);
+            item = telaInventario(inv); // inventario
             int indiceItem = buscaLinear(itensDisponiveis, 2, item); // busca linear aplicada aqui
 
-            if(indiceItem == 0 && inv[0] > 0){
-                hpPlayer += 50;
-                if (hpPlayer > classes[escolha].HP) hpPlayer = classes[escolha].HP;
+            if(indiceItem == 0 && inv[0] > 0){ 
+                hpPlayer += 50; // VIDA DA POCAO PARA O PLAYER
                 inv[0] -= 1;
             } else if(indiceItem == 1 && inv[1] > 0){
-                ppPlayer += 5;
-                if (ppPlayer > classes[escolha].PP) ppPlayer = classes[escolha].PP;
+                ppPlayer += 5; // PP DA POCAO
+                if (ppPlayer > classes[escolha].PP) ppPlayer = classes[escolha].PP; // PP DA POCAO PARA O PLAYER
                 inv[1] -= 1;
-            }
+            } 
         }
 
-        if(hpPlayer < 0) hpPlayer = 0;
-        if(ppPlayer < 0) ppPlayer = 0;
+        if(hpPlayer < 0) hpPlayer = 0; // Vida minima
+        if(ppPlayer < 0) ppPlayer = 0; // PP minima
 
-        if(habilidades[(atk-1)+(4*escolha)].stun != 1){
-            hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano;
+        if(habilidades[(atk-1)+(4*escolha)].cura != 0) hpPlayer += habilidades[(atk-1)+(4*escolha)].cura; // Cura das Habilidades
+
+        if (hpPlayer > classes[escolha].HP) hpPlayer = classes[escolha].HP; // Limitador de vida na cura
+
+        if(habilidades[(atk-1)+(4*escolha)].stun != 1){ // Stun
+            hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano; //Dano do inimigo
         }
 
-        if(hpPlayer <= 0){
+        if(hpPlayer <= 0){ // verificacao de derrota
             return 0;
             break;
-        } else if(hpInimigo == 0){
+        } else if(hpInimigo == 0){ // verificacao de vitoria
             return 1;
             break;
         }   
