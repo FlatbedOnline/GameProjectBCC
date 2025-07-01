@@ -46,7 +46,6 @@ int combate(int escolha, int inimigo){
 
             if(indiceItem == 0 && inv[0] > 0){
                 hpPlayer += 50;
-                if (hpPlayer > classes[escolha].HP) hpPlayer = classes[escolha].HP;
                 inv[0] -= 1;
             } else if(indiceItem == 1 && inv[1] > 0){
                 ppPlayer += 5;
@@ -57,6 +56,10 @@ int combate(int escolha, int inimigo){
 
         if(hpPlayer < 0) hpPlayer = 0;
         if(ppPlayer < 0) ppPlayer = 0;
+
+        if(habilidades[(atk-1)+(4*escolha)].cura != 0) hpPlayer += habilidades[(atk-1)+(4*escolha)].cura;
+
+        if (hpPlayer > classes[escolha].HP) hpPlayer = classes[escolha].HP;
 
         if(habilidades[(atk-1)+(4*escolha)].stun != 1){
             hpPlayer -= habilidadesInimigos[aleatorio(3)+(3*inimigo)].dano;
