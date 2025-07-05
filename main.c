@@ -15,7 +15,7 @@ printf(
 "Tanque equilibrado, bom HP e        Frágil, mas poderoso com magias.   Muito dano físico, baixa energia.\n"
 "ótimo para combate direto.          Ideal para ataques à distância.     \n"
 "HP:         125                     HP:         85                     HP:         140\n"
-"ATK Base:   12                      ATK Base:   13                      ATK Base:   20\n"
+"ATK Base:   12                      ATK Base:   13                     ATK Base:   20\n"
 "PP:         11                      PP:         18                     PP:         5\n\n"
 "Habilidades:                        Habilidades:                       Habilidades:\n"
 "- Golpe Espada (0PP): 12 dano       - Ataque Mágico (0PP): 13 dano     - Ataque Machado (0PP): 20 dano\n"
