@@ -41,7 +41,7 @@ void mostrar_todas_classes() {
 void mostrar_classe(int escolha) {
     printf("\033[H\033[J");
     switch (escolha) {
-        case 1: // Guerreiro
+        case 1: // guerreiro
             printf("=========== GUERREIRO ===========\n"
                    "Tanque equilibrado, bom HP e ótimo para combate direto.\n"
                    "HP:  125\nATK: 12\nPP:  11\n"
@@ -52,7 +52,7 @@ void mostrar_classe(int escolha) {
                    "- Postura Defensiva (3PP): bloqueia o dano de um round\n"
                    "=================================\n\n");
             break;
-        case 2: // Mago
+        case 2: // mago
             printf("============= MAGO =============\n"
                    "Frágil, mas poderoso com magias.\n"
                    "HP:  85\nATK: 13\nPP:  18\n"
@@ -63,7 +63,7 @@ void mostrar_classe(int escolha) {
                    "- Cura Arcana (5PP): +30 HP\n"
                    "================================\n\n");
             break;
-        case 3: // Bárbaro
+        case 3: // bárbaro
             printf("=========== BÁRBARO ============\n"
                    "Muito dano físico, baixa energia.\n"
                    "HP:  140\nATK: 20\nPP:  5\n"
@@ -74,7 +74,7 @@ void mostrar_classe(int escolha) {
                    "- Fúria (3PP): 40 dano\n"
                    "===============================\n\n");
             break;
-        case 4: // Arqueiro
+        case 4: // arqueiro
             printf("=========== ARQUEIRO ===========\n"
                    "Versátil, ideal para longa distância.\n"
                    "HP:  100\nATK: 10\nPP:  14\n"
@@ -85,7 +85,7 @@ void mostrar_classe(int escolha) {
                    "- Flecha Envenenada (4PP): 27 dano\n"
                    "===============================\n\n");
             break;
-        case 5: // Ladrão
+        case 5: // ladrão
             printf("=========== LADRÃO =============\n"
                    "Ágil e furtivo, especialista em críticos.\n"
                    "HP: 100\nATK: 12\nPP: 16\n"
